@@ -1,0 +1,17 @@
+<div class="header">
+  <div class="logo"><img src="https://www.capitalnumbers.com/images/logo.svg"></div>
+
+
+
+
+
+
+<div  class="navbar" *ngFor="let pages of navdata; index as i;"><div ><a routerLink="./user/{{pages}}"
+              routerLinkActive="active" >{{pages}}</a></div>
+
+
+            </div>
+            <div class="button"><button mat-raised-button color="warn"routerLink="./user/{{button}}" routerLinkActive="active" (click)="openModal()">BOOK A CALL</button></div>
+
+            </div>
+

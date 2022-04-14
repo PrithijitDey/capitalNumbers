@@ -1,0 +1,40 @@
+.header {
+
+  .logo{
+    margin-left: 170px;
+    margin-right: 130px;
+    text-align: start;
+    font-size: xx-large;
+    display: inline-block;
+    width: 50px;
+    height:35x;
+    color: aquamarine;
+  }
+
+  .navbar{
+
+    padding: 2px;
+    display:inline-block;
+    text-align: right;
+    width: 100px;
+    height: 5px;
+    word-spacing: -10px;
+    color: rgb(255, 255, 255);
+
+    }
+    .button{
+      margin-left: 90px;
+      display: inline-block;
+      text-align: right;
+
+    }
+
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 10px;
+  background: #ffffff;
+  color: rgb(19, 2, 2);
+
+}
