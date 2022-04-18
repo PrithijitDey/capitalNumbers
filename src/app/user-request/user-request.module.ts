@@ -9,7 +9,8 @@ import { IndustriesComponent } from '../user-request/industries/industries.compo
 import { CasestudiesComponent } from '../user-request/casestudies/casestudies.component';
 import { HiringComponent } from '../user-request/hiring/hiring.component';
 import { ContactUsComponent } from '../user-request/contact-us/contact-us.component';
-
+import {MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [
 
@@ -24,7 +25,9 @@ import { ContactUsComponent } from '../user-request/contact-us/contact-us.compon
   ],
   imports: [
     CommonModule,
-    UserRequestRoutingModule
+    UserRequestRoutingModule,
+    MatInputModule,
+     MatFormFieldModule
   ]
 })
 export class UserRequestModule { }

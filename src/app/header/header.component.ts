@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataServices } from '../data.service';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { BookACallComponent } from '../user-request/book-a-call/book-a-call.component';
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -11,12 +13,12 @@ import { BookACallComponent } from '../user-request/book-a-call/book-a-call.comp
 export class HeaderComponent implements OnInit {
   navdata: any[] = [];
   button:any[]=[];
-  bookacallService: any;
+
   constructor(private dataService: DataServices,
-    private router: Router,public modalService: NgbModal
+    private router: Router,public bookacallService: NgbModal
     ) { }
     openModal() {
-      //ModalComponent is component name where modal is declare
+
       const modalRef = this.bookacallService.open(BookACallComponent);
       modalRef.result.then((result: any) => {
         console.log(result);
@@ -33,7 +35,7 @@ export class HeaderComponent implements OnInit {
     })
     this.dataService.getButton().subscribe((buttonresponse: any) => {
       this.button = buttonresponse;
-      console.log('Button recieved');
+      console.log('Navbar Button recieved');
 
 
     })

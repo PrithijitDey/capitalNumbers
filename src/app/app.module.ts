@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,12 +8,14 @@ import { HeaderComponent } from './header/header.component';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     HeaderComponent
   ],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -21,8 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
      HttpClientModule,
      BrowserAnimationsModule,
      MatButtonModule
-
   ],
+  exports:[],
   providers: [],
   bootstrap: [AppComponent]
 })
