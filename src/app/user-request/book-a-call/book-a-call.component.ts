@@ -11,11 +11,10 @@ export class BookACallComponent implements OnInit {
   result: any;
 
   constructor(private activeModal: NgbActiveModal,) {}
-  ngOnInit() {
-  }
-  closeModal() {
-    this.activeModal.close('Modal Closed');
-   console.log('bookacall component recieved');
-  }
+  ngOnInit() {}
+    closeModal() {
+       this.activeModal.close('Modal Closed');
+        console.log('bookacall component recieved');
+    }
 
 }

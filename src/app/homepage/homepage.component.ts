@@ -12,15 +12,14 @@ export class HomepageComponent implements OnInit {
   navdata: any[] = [];
   button:any[]=[];
 
-  constructor(private dataService: DataServices,
-    private router: Router,public bookacallService: NgbModal
-    ) { }
+    constructor(private dataService: DataServices,
+      private router: Router,public bookacallService: NgbModal) {}
     openModal() {
 
       const modalRef = this.bookacallService.open(BookACallComponent);
-      modalRef.result.then((result: any) => {
-        console.log(result);
-      }).catch((error: any) => {
+        modalRef.result.then((result: any) => {
+            console.log(result);
+        }).catch((error: any) => {
         console.log(error);
       });
     }
@@ -29,8 +28,8 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataService.getButton().subscribe((buttonresponse: any) => {
-      this.button = buttonresponse;
-      console.log('Button recieved');
+        this.button = buttonresponse;
+        console.log('Button recieved');
   })
 
 

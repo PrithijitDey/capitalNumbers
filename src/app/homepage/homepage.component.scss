@@ -1,8 +1,51 @@
-.button{
 
+.col-lg-10{
+text-align: left;
+}
+.left{
+  position:initial;
   display: inline-block;
-  text-align: right;
-  width: 200px;
-  height: 30px;
+  text-align: left;
+  font-size:x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  width: 500px;
+  height: 100px;
+  .img1{
+    position: absolute;
 
+  }
+  .img2{
+    position: relative;
+    display:inline-block;
+    margin-top: 350px;
+  }
+}
+.right{
+  position: fixed;
+  display: inline-block;
+  position: absolute;
+  color: azure;
+  width: 500px;
+  text-align: left;
+
+  .mat-raised-button {
+    padding: 0 6px 0 6px;
+    margin: 6px 8px 6px 8px;
+
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    width: 200px;
+    height: 50px;}
+
+
+  span{font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;}
+.light-blue-color{color: rgb(94, 170, 241);}
+  .green{font-size: 40px;
+    color: rgb(115, 204, 115);
+
+  }
 }
